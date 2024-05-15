@@ -3,8 +3,8 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/c6c73db5-3fd6-4751-aa44-10fd1214ae72" alt="home" style="width: 35%;">
-  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/892b1535-5351-4ec7-9714-ad6e3ef0a007" alt="home" style="width: 35%;">
+  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/c6c73db5-3fd6-4751-aa44-10fd1214ae72" alt="home" style="width: 25%;">
+  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/892b1535-5351-4ec7-9714-ad6e3ef0a007" alt="home" style="width: 25%;">
 </p>
 
 ## Description
@@ -232,7 +232,7 @@ Now you can observe how the app behaves in real time!
 <br>
 
 <p align="center">
-  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/e0ca56d5-b971-4baa-88ab-c982dacb1d4c" alt="home" style="width: 35%;">
+  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/e0ca56d5-b971-4baa-88ab-c982dacb1d4c" alt="home" style="width: 55%;">
 </p>
 
 <br>
