@@ -239,7 +239,7 @@ Here are the documentations that helped me create the mock and my production app
 
 ## License
 
-This project is licensed. Please see the [LICENSE](LICENSE.md) file for more details.
+This project is licensed. Please see the license file for more details.
 
 <br>
 
