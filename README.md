@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/c6c73db5-3fd6-4751-aa44-10fd1214ae72" alt="home" style="width: 25%;">
-  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/892b1535-5351-4ec7-9714-ad6e3ef0a007" alt="home" style="width: 25%;">
+  <img src="https://github.com/ArlanBiati/tap-to-pay-rn/assets/43690080/3452926b-3fda-4957-948c-8344857c484d" alt="home" style="width: 25%;">
 </p>
 
 ## Description
