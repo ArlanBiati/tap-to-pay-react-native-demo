@@ -112,6 +112,7 @@ export function PageStripe() {
 
       if (error) {
         console.log('Error collecting payment', error)
+        Alert.alert('Error collecting payment', error.message)
         return
       }
 
@@ -167,8 +168,6 @@ export function PageStripe() {
       )
     }
   }, [accessDenied])
-
-  console.log(Number((value * 100).toFixed()))
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
