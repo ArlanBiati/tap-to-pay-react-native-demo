@@ -5,6 +5,7 @@ import {
   Linking,
   SafeAreaView,
   Text,
+  TextInput,
   View,
 } from 'react-native'
 import { useStripeTerminal } from '@stripe/stripe-terminal-react-native'
@@ -24,6 +25,7 @@ interface PaymentIntent {
 export function PageStripe() {
   const { location, accessDenied } = useLocation()
 
+  const [value, setValue] = useState(0)
   const [reader, setReader] = useState()
   const [payment, setPayment] = useState<PaymentIntent>()
   const [loadingCreatePayment, setLoadingCreatePayment] = useState(false)
@@ -80,7 +82,7 @@ export function PageStripe() {
     setLoadingCreatePayment(true)
     try {
       const { error, paymentIntent } = await createPaymentIntent({
-        amount: 100,
+        amount: Number((value * 100).toFixed()),
         currency: 'usd',
         paymentMethodTypes: ['card_present'],
         offlineBehavior: 'prefer_online',
@@ -166,6 +168,8 @@ export function PageStripe() {
     }
   }, [accessDenied])
 
+  console.log(Number((value * 100).toFixed()))
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View
@@ -191,6 +195,29 @@ export function PageStripe() {
           </Text>
         </View>
         <View style={{ gap: 10 }}>
+          <View style={{ marginBottom: 20, gap: 10 }}>
+            <Text
+              style={{
+                fontSize: 18,
+                fontWeight: 'bold',
+                color: '#635AFF',
+              }}
+            >
+              Amount to be charged
+            </Text>
+            <TextInput
+              style={{
+                borderColor: '#635AFF',
+                borderWidth: 1,
+                borderRadius: 8,
+                padding: 15,
+              }}
+              placeholder="Enter the value"
+              onChangeText={(inputValue) => setValue(Number(inputValue))}
+              keyboardType="numeric"
+            />
+          </View>
+
           <Button
             onPress={() => connectReader(reader)}
             title="Connecting with the reader"

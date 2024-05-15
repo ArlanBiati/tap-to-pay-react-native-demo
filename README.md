@@ -159,7 +159,10 @@ async function paymentIntent() {
 }
 ```
 
-In this function, we create the payment intent responsible for capturing the amount, currency type, payment methods (card, virtual card, etc.), and so on. As in the previous function, we can destructure the request and get the payment intent data or error if it occurs.
+In this function, we create the payment intent responsible for capturing the amount, currency type, payment methods (card, virtual card, etc.), and so on. Just like in the previous function, we can destructure the request and obtain the payment intent data or the error, if it occurs.
+
+\*\*\* The amount always equals its full value, without dots.
+Example: U$ 1.00 = 100; U$ 10.00 = 1000;
 
 <br>
 
